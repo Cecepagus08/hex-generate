@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6F6;
+  font-family: "Sans-Serif", Sans-Serif;
+}
+.container{
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-items: center;
+}
+.warna-display{
+  width: 80%;
+  height:200px;
+  border-radius: 8px;
+  background-color: #bced71;
+}
+h2{
+  margin-bottom: 5px;
+  color:  #656d72;
+}
+.hex-number{
+  width: 80%;
+  height: 50px;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: #00000066;
+  background-color: #0000000d;
+  outline: none;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+}
+.container-btn{
+  margin-top: 5px;
+  height:50px;
+  width: 80%;
+  
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+.container-btn button:hover{
+  box-shadow: 0 4px 6px -1px    rgba(254,254,254,0.494), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+}
+.container-btn button {
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  border: 0 solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.container-btn button:nth-child(1) {
+  background-color: #E1888A; /* Warna untuk tombol pertama */
+}
+
+.container-btn button:nth-child(2) {
+  background-color: #F2B297; /* Warna untuk tombol kedua */
+}
+
