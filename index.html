@@ -4,43 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js"></script>
   <title>Hex Generate New</title>
 </head>
 <body>
  <div class="container">
    <h2>Hex Generate</h2>
    <div class="warna-display"></div>
-   <input type="text" class="hex-number" value="#bced71"readonly>
+   <input type="text" class="hex-number" readonly>
    <div class="container-btn">
     <button onclick="generate()" class="btn">Generate</button>
     <button onclick="copyText()" class="btn">Copy</button>
    </div>
  </div>
- <script>
-      const hexNumber = document.querySelector(".hex-number");
-     
 
-      function generate() {
-          const display = document.querySelector(".warna-display");
-          const randomHex = () =>
-              `#${Math.floor(Math.random() * 0xffffff)
-                  .toString(16)
-                  .padStart(6, '0')}`;
-          hexNumber.value = randomHex();
-          display.style.backgroundColor = hexNumber.value;
-      }
-
-      function copyText() {
-          hexNumber.select();
-          navigator.clipboard.writeText(hexNumber.value)
-              .then(() => {
-                  alert("Text copied: " + hexNumber.value);
-              })
-              .catch(error => {
-                  alert("Failed to copy text: " + error);
-              });
-      }
- </script>
+  
 </body>
+  <script src="js/index.js"></script>
 </html>
